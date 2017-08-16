@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="utf-8">
+    <title></title>
+    </head>
+    <body>
+
+    <div class="contact-button" onclick="openWindow()" id="contact-button">
+    Contact us
+    </div>
+    <div class="window" id="window">
+      <span  class="contact-us">
+        Contact us:
+      </span>
+  <span class="cross" id="cross" onclick="closeWindow()">
+    &#10006;
+  </span>
+  <form>
+      <input type="email"  name="email" placeholder="Please type your email...">
+      <textarea  placeholder="Type your message" cols="30" rows="5"></textarea>
+      <input type="submit" value="Send">
+  </form>
+</span>
+</div>
+<script>
+function openWindow() {
+document.getElementById("contact-button").style.display="none";
+document.getElementById("window").style.display="block";
+
+}
+function closeWindow() {
+  document.getElementById("contact-button").style.display="block";
+  document.getElementById("window").style.display="none";
+
+}
+</script>
+  </body>
+</html>
